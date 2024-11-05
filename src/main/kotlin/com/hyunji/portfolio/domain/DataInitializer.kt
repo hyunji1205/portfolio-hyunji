@@ -11,7 +11,6 @@ import java.time.LocalDate
 
 @Component
 @Profile(value = ["default"])
-
 class DataInitializer(
     private val achievementRepository: AchievementRepository,
     private val introductionRepository: IntroductionRepository,
@@ -19,7 +18,7 @@ class DataInitializer(
     private val skillRepository: SkillRepository,
     private val projectRepository: ProjectRepository,
     private val experienceRepository: ExperienceRepository,
-){
+) {
 
     @PostConstruct
     fun initializeData() {
